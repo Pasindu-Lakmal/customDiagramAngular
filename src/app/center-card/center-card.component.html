@@ -1,0 +1,37 @@
+<kendo-card>
+  <kendo-card-header class="k-hstack">
+    <kendo-avatar
+      width="40px"
+      height="40px"
+      [imageSrc]="thumbnailSrc"
+      shape="circle"
+    ></kendo-avatar>
+    <div>
+      <h1 kendoCardTitle>Center Node</h1>
+      <p kendoCardSubtitle>Bulgaria, Europe</p>
+    </div>
+  </kendo-card-header>
+  <img [src]="cover" kendoCardMedia alt="cover_img" />
+  <kendo-card-body>
+    <h4>Black Sea, Bulgaria</h4>
+    <hr kendoCardSeparator />
+    <p>
+      The Black Sea is bordered by Ukraine, Romania, Bulgaria, Turkey, Georgia,
+      and Russia.
+    </p>
+  </kendo-card-body>
+  <kendo-card-actions orientation="horizontal" layout="stretched">
+    <button kendoButton fillMode="flat" (click)="toggleLike()">
+      <span [ngClass]="heartIcon()"></span>
+      Like
+    </button>
+    <hr kendoCardSeparator orientation="vertical" />
+    <button kendoButton fillMode="flat">Share</button>
+    <hr kendoCardSeparator orientation="vertical" />
+    <button kendoButton fillMode="flat">Read More</button>
+  </kendo-card-actions>
+  <kendo-card-footer class="k-hstack">
+    <span>Created By @alex</span>
+    <span>March 4, 2020</span>
+  </kendo-card-footer>
+</kendo-card>
