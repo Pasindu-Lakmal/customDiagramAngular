@@ -7,6 +7,7 @@ import { CenterCardComponent } from './center-card/center-card.component';
 import { NodesComponent } from './nodes/nodes.component';
 import { LayoutModule } from '@progress/kendo-angular-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MainDiagramComponent } from './main-diagram/main-diagram.component';
 
 
 
@@ -14,7 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     CenterCardComponent,
-    NodesComponent
+    NodesComponent,
+    MainDiagramComponent
   ],
   imports: [
     BrowserModule,
